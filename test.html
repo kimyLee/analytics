@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>测试</title>
+    <script src="./analytics1.js" type="module"></script>
+    <script src="./test.js" type="module"></script>
+  </head>
+  <body>
+    <p>打开控制台查看console，和network输出</p>
+    <p>本地file协议打开会跨域，可以在目录下 npm install http-server, 用一个server查看当前目录</p>
+    <br>
+    <br>
+    <button id="basic">基本请求</button>
+    <br>
+    <br>
+    <button id="send33">批量上报</button>
+    <br>
+    <br>
+    <p>无网络上报，请先勾选控制台network的offline选项，然后点击页面“发送数据”，再取消offline，并再次发送数据, 会连带发送暂存数据</p>
+    <button id="send10">发送数据</button>
+    <br>
+    <br>
+    <p>页面visibility, 直接切换tab即可，切换完立刻回来，以及切换2s后回来表现不同</p>
+    <br>
+    <br>
+    <p>页面hash变化, 点击以下页面进行切换</p>
+    <p><a href="#" style="margin-left: 50px;">#(不带hash值)</a> <a style="margin-left: 100px;" href="#hash">#hash(带hash值)</a></p>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
