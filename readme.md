@@ -14,7 +14,7 @@
 - 使用第三方分析平台的api的话，可以思考能否优化和封装
 - 不是规范，侧重想法
 
-final code：[analytics.js](https:/sss/)
+final code：[analytics.js](https://github.com/kimyLee/analytics)
 ### 请求的方式：简洁|高效|通用
 我们先用最直接的方式来实现这个埋点上报脚本。<br>
 创建文件并命名为 analytics.js, 在脚本里面添加一个请求，稍微包一下：
@@ -319,9 +319,9 @@ sendInPack (logs, sync) {
 > 注意`navigator.onLine `在不同浏览器开发环境下的问题，比如chrome下localhost访问时候，navigator.onLine值总为false， 改用127.0.0.1则正常返回值
 
 ### 更好的pv: visibilitychange
-PV是日志上报中很重要的一环，
-目前为止我们基本实现完上报了，现在再回归到业务层面。埋点的目的是什么，以及怎样更好得达到我们的目的？
-pv是埋点中重要的一环，推荐先阅读这篇关于pv的文章:<br>
+PV是日志上报中很重要的一环。<br>
+目前为止我们基本实现完上报了，现在再回归到业务层面。pv的目的是什么，以及怎样更好得达到我们的目的？
+推荐先阅读这篇关于pv的文章:<br>
 [为什么说你的pv统计是错的](https://zhuanlan.zhihu.com/p/26341409)
 
 在大多数情况下，我们的pv上报假设每次页面浏览（Page View）对应一次页面加载（Page Load），且每次页面加载完成后都会运行一些统计代码, 然而这情况对于尤其单页应用存在一些问题
@@ -392,7 +392,7 @@ delay (func, time) {
 }
 ```
 
-ok, 到这里就差不多了，考虑到不同业务场景，我们可以有更多空间可以填补，数据闭环对业务对作用还是挺大的，完整文件在这里[analytics.js](https:/sss/)， 附带测试代码
+ok, 到这里就差不多了，完整示意在这里 [analytics.js](https://github.com/kimyLee/analytics)，加了点调用测试<br> 考虑到不同业务场景，我们还有有更多空间可以填补，数据闭环其实也是为了更好的业务分析服务，虽然是一个传统功能，但值得细细考究的点还是挺多的吧
 
 
 
