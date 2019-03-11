@@ -337,7 +337,7 @@ PV是日志上报中很重要的一环。<br>
 在我们的构造函数中增加以下片段：
 ``` javascript
 this.option = Object.assign({
-  url: 'https://api.djigo.com/api/test',
+  url: 'https://baidu.com/api/test',
   maxLogNum: 10,
   stayTime: 2000, // ms, 页面由隐藏变为可见，并且自上次用户交互之后足够久，可以视为新pv的时间间隔
   timeout: 6000   // 页面切换间隔，小于多少ms不算间隔
